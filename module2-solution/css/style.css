@@ -1,0 +1,89 @@
+/* desktop 992px and above */
+/* tablet 768px to 991px */
+/* mobile 767px and below */
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: #04030F;
+}
+
+html {
+	background: lightgrey;
+}
+
+h1 {
+	text-align: center;
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 125%;
+	text-align: center;
+}
+
+.container {
+	text-align: center;
+	margin: 25px;
+	padding: 5px;
+}
+
+.item {
+	background: #E7E393;
+	display: inline-block;
+	border: 1px solid #04030F;
+	padding: 5px;
+	margin: 10px;
+}
+
+.item-title {
+	border: 1px solid #04030F;
+	width: auto;
+	float: right;
+	padding: 5px;
+	text-align: right;
+}
+
+#item-one > .item-title{
+	background-color: #854D27;
+}
+
+#item-two > .item-title{
+	background-color: #DD7230;
+}
+#item-three > .item-title{
+	background-color: #F4C95D;
+}
+
+.item-content {
+	clear: right;
+}
+
+@media (min-width: 992px) {
+	.container {
+		margin: 5px;
+	}
+
+	.item {
+		width: 30%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#item-one {
+		margin: 5px;
+		width: 45%;
+	}
+
+	#item-two {
+		margin: 5px;
+		width: 45%;
+	}
+}
+
+@media (max-width: 767px) {
+	.item {
+		display: block;
+	}
+}
